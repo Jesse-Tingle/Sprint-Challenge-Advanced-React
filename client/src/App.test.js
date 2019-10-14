@@ -14,7 +14,9 @@ import App from './App';
 
 afterEach(rtl.cleanup);
 
-test('Does app render?', async () => {
+test('Does app render h1 navbar title?', async () => {
   const wrapper = rtl.render(<App />)
-  wrapper.debug()
+  wrapper.debug(wrapper.queryByText(`Trending Women's World Cup Players`))
 })
+
+
