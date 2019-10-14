@@ -6,7 +6,7 @@ import PlayersList from './components/PlayersList.js';
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
+      <Navbar />
       <PlayersList />
     </div>
   );
