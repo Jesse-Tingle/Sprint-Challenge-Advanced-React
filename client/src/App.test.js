@@ -16,7 +16,11 @@ afterEach(rtl.cleanup);
 
 test('Does app render h1 navbar title?', async () => {
   const wrapper = rtl.render(<App />)
-  wrapper.debug(wrapper.queryByText(`Trending Women's World Cup Players`))
+  // wrapper.debug(wrapper.queryByText(`Trending Women's World Cup Players`))
+
+  const element = wrapper.getByText(`Trending Women's World Cup Players`)
+
+  expect(element).toBeVisible()
 })
 
 
